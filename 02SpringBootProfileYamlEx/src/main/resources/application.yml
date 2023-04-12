@@ -1,0 +1,37 @@
+my:
+  app:
+    host: mySql
+    password: abc
+    port: 8084
+    username: root
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - qa
+
+my:
+  app:
+    host: Oracle
+    password: abcq
+    port: 8082
+    username: rootq
+    
+---
+
+spring:
+  config:
+    activate:
+      on-profile:
+      - prod
+
+my:
+  app:
+    host: Postgree
+    password: abcf
+    port: 8080
+    username: rootf   
+    
+---    
